@@ -1,0 +1,51 @@
+
+<div class="contenedorForm">
+        <h1>Contáctanos</h1>
+        <p>Déjenos sus datos en el siguiente formulario y en breve nos comunicaremos! ¡Muchas gracias!</p>
+
+    <form action="#" id="formContact" method="submit">
+        <label for ="nombre">
+            <h5> Nombre</h5>
+            <input  type="text" name="nombre" value="" placeholder="Su nombre">
+        </label>
+
+        <label for="telefono">
+            <h5> Teléfono</h5>
+            <input type= "tel" name="telefono" value="" placeholder="Nro. de telefono" required>
+        </label>
+
+        <label for="direccion">
+            <h5> Dirección</h5>
+            <input type="text" name="direccion" value="" placeholder="Dirección" required>
+        </label>
+
+        <label for="E-mail"> 
+            <h5>E-mail</h5>
+            <input type="email" name="email" value="" placeholder="E-mail" required>
+         </label>
+
+        <label for="comentario">
+            <h5>Comentarios y consultas</h5>
+            <textarea name="comentario" rows="5" cols="40" placeholder="Escriba aquì su comentario o consulta" required></textarea>                
+        </label> 
+
+        <button id= "enviarForm" type="submit"> enviar</button>
+    
+
+    <label id=captcha for="captcha " name="Robot">
+        <h4> Escriba las letras que ve en la imagen</h>
+         <img  id='imgCaptcha' src="images/capthchasImages/captcha1.png" alt="capthchaImages">
+         <input name="textoCaptcha" id="txtcptch" type="text" value="" placeholder="Texto de la imagen">                         
+         <button id="btnCaptcha" type ="button">verificar</button>      
+         <p id="verificacion"></p>
+            
+    </label>
+</form> 
+        
+        
+
+
+</div>
+
+   
+  

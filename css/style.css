@@ -1,0 +1,382 @@
+/*Mobile First*/
+
+body{
+    background-color: rgb(86 127 33);
+}
+
+#logoSupMax{
+    display: none;
+} 
+
+/* estilos para Header-NAV*/
+
+header{   
+    width: 100%; 
+    display: flex;              
+    justify-content:space-between;
+    align-items: center;    
+    background-color:rgb(245, 118,21);         
+}
+
+.menu-nav{
+    display:flex;
+    align-content: flex-start;
+    position: relative;
+    width:50%   
+}
+ 
+.logo{
+    width: 50%;;
+    flex: grow 1;
+    text-align: end;    
+}
+
+#logoSup{
+    height: 15vh;
+}    
+ 
+#navBar{
+    display: none;  
+    position: absolute;
+    width: 10rem;
+    background-color: rgb(245, 118,21);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.7);      
+    border: 2px solid black;           
+ }
+
+ #navBar ul{
+    list-style: none;
+    margin-left: 0rem;
+    padding-left: 10px;
+}
+
+#navicon  {
+    margin-left  : 1rem;   
+}
+
+/*FIN ESTILO HEADER-NAV*/
+
+
+/*ESTILO INDEX-OFERTAS*/
+
+.imgCarrusel{
+    width: 100%;
+    height: auto;
+}
+
+.ofertas , #productos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content:space-evenly;
+    background-color: rgb(245, 118,21);
+    border-radius: 1rem;
+    border: .5vh solid black;
+    box-shadow: 5px black;   
+}
+
+/*fin estilo index ofertas*/
+
+
+/* ESTILOS PRODUCTOS */
+.productos{
+    display: flex;
+    flex-direction:column;
+    align-content: space-around;
+}
+
+.boxProducto{
+    border: .5vh solid black;
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.7);
+    background-color: rgb(86 127 33);      
+}
+
+.boxProducto > div > img{
+    border-radius: 1rem;
+    margin: 1rem;
+    border:  .5vh solid white
+}
+
+.ofertas > h1{
+    display: inline-block;   
+}
+
+.textoProducto{ 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;  
+    text-transform: uppercase;
+}    
+
+
+/*FIN ESTILO PRODUCTOS*/
+
+/*estilo nuestras tienda*/
+
+.quienes{
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(245, 118,21);
+    border-radius: 1rem;
+    border: .5dv solid  black;
+    margin-top: 1rem ;
+    text-align: justify;
+    width: 100%;
+}
+
+.quienes img{
+    width: 85%;    
+}
+
+#textoQuienes{
+    margin: .5rem;
+    width: 90%;
+}
+
+#imagenQuienes {
+    width: 70%;
+    display:flex;    
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+ .sucursales {
+    display: contents;
+    text-align: justify;
+    font-size: large;
+    color: rgb(248, 130, 20);    
+    margin-top: 2rem; 
+    width: 100%; 
+}
+
+.sucursales > li{
+    margin: 2rem ;
+    background-color: white;
+    list-style: none;
+} 
+
+/* fin estilo nuestra tienda */
+
+/* estio lista de precios */
+
+.listaPrecios{ 
+    background-color: rgba(86, 127,33,0.2);
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: .5vh solid #fff59d;
+    text-align: center;    
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    margin-top: 1rem;
+}
+
+#formCargaProd{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(245, 118,21);
+    border-radius: 1rem;
+    border: .5dv solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Fin estilo lista de precios */
+
+/* ESTILO FORMULARIO CONTACTO */
+
+.contenedorForm{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(245, 118,21);
+    border-radius: 1rem;
+    border: .5dv solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;   
+}
+
+.contenedor-form p {
+    margin-top: 1rem;
+}
+
+#imgCaptcha{
+    height: 5rem;
+    width: auto;
+}
+
+#enviarForm{
+    margin: 2rem;
+}
+
+
+/* estilos footer */
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    background-color: rgba(86 127 33);
+}
+
+.social > a{
+    display: inline-block;
+    min-height: 2rem;
+    width: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 1rem 1rem 0;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+
+.social > a:hover{
+    background-color: rgb(245, 118,21);
+}
+
+.rights{
+    font-size: .6rem;
+    font-style: oblique;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* FIN ESTILO FOOTER */
+
+/*estilo tomados por JS para modificar tabla dinamica*/
+
+.descPorcentaje{
+    background-color:rgb(245, 118,21) ; ;
+}
+
+/* comienzo estilo para escritorio */
+
+
+@media (min-width: 600px) {
+
+#navicon{
+    display: none;
+}
+
+/* estilo header y nav */
+
+#navBar{
+    display: flex;
+    height: 6rem;
+    width: 100%;
+    position: relative;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    border: none;
+    border-radius: 0;
+    flex-direction: row;
+    justify-content: space-evenly;   
+}
+       
+#logoSup{
+    display: none;      
+}    
+
+#logoSupMax{
+    display: flex;
+    width: 5rem;
+}
+    
+.header{
+    display: flex;
+    flex-direction:row;            
+    align-content:center;
+    justify-content:center;
+    margin: auto;           
+    padding: 20px;
+    width: 100%;           
+    top: 0;
+    left: 0;
+    background: rgb(222, 205, 190);      
+}
+
+#navBar > ul{
+    height: 100%;
+    display: flex;
+    align-content:center;
+}
+
+#navBar > ul > li{
+    display: flex;
+    height: 75%;
+    list-style: none;
+    position: relative;    
+    text-align: center;
+}
+
+#navBar > ul > li > a{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items:start;
+    padding:1rem;
+    color: white;
+    text-transform: uppercase; 
+    font-size: 1rem;
+    transition: all 300ms ease;
+}
+
+#navBar > ul > li > a:hover{
+    transform: scala(1.1);
+    background: rgb(245, 118,21);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+  
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.rights{
+    font-size: 1rem;
+    font-style:normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* fin estilo header y nav */
+
+
+/*estilo quienes escritorio*/
+
+.quienes{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;  
+    font-weight: bold;
+}
+
+#textoQuienes , #imagenQuienes  {
+    width: 45%;
+}
+
+}

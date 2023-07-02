@@ -1,0 +1,48 @@
+
+
+    <div class="contenido">
+        <table class="listaPrecios">
+            <thead>
+                <tr>
+                    <th>producto</th>
+                    <th>x250grs</th>
+                    <th>x500grs</th>
+                    <th>x1kg</th>
+                </tr>
+            </thead
+            <tbody id="tablaPrecios" >
+        
+            </tbody>
+        </table
+        <h3>¡Si el producto tiene fondo naranja tiene un descuento del 15% sobre el valor publicado!</h3
+        <h4> sector de carga de productos exclusivo del administrador</h4
+        <form id="formCargaProd">
+            <label for ="nombre">
+                <h4> sector de carga de productos exclusivo del administrador</h4>
+                <h5> Producto</h5>
+                <input  type="text" name="producto" id="producto" value="" placeholder="nombre del producto" required>
+            </label
+            <label for="precio250">
+                <h5>Precio x 250Grs</h5>
+                <input type= "number" name="precio250" id="precio250" value="" placeholder="Precio por 250 grs." required>
+            </label
+            <label for="precio500">
+                <h5> Precio x 500 grs</h5>
+                <input type="number" name="precio500" id="precio500" value="" placeholder="Precio por 500 grs." required>
+            </label
+            <label for="precio1kg"> 
+                <h5> precio x 1 kg</h5>
+                <input type="number" name="precio1kg" id="precio1kg" value="" placeholder="Precio por 1 Kg." required>
+            </label>
+            <h3>¡Si el producto tiene fondo naranja tiene un descuento del 15% sobre el valor publicado!</h3>
+            <p> si se debe realizar descuento 15% en contado efectivo<p>
+            <input type="checkbox" name="desc15" id="desc15">
+            <button type="button" class="cargarProd" value='1'>Cargar 1 producto</button>  
+            <button type="button" class="cargarProd" value = '3'> cargar 3 productos</button>
+            <button type="button" id="borrarTabla" value = '0'> borrar tabla</button>
+        
+            </form>
+    </div>           
+
+    
+    <script src ="js/tablaDinamica.js"></script>
