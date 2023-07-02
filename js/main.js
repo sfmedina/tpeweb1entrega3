@@ -33,12 +33,7 @@ async function cargarPR(url){
                 console.log("ok");
                 let t =await response.text();
                 contenedor.innerHTML = t;
-                console.log(url)
-
-                
-                //  let html = document.createElement("div");
-                //  html = await t.text();
-                //  containerPR.appendChild(html);
+                console.log(url);                            
             }
             else{
                 let error = document.createElement("h3");
