@@ -296,7 +296,7 @@ header{
 /* comienzo estilo para escritorio */
 
 
-@media (min-width: 600px) {
+@media (min-width: 620px) {
 
 #navicon{
     display: none;

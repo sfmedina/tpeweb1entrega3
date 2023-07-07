@@ -62,7 +62,6 @@ async function cargarPR(url) {
                     let res = await fetch(url);
                     let json = await res.json();
 
-                    console.log(json);
 
                     const productos = json.map((producto) => {
                         let nombre = producto.producto;
@@ -120,6 +119,18 @@ async function cargarPR(url) {
                         console.log("tiene descuento!!!");
                     }
                     fila.appendChild(tdDesc15);
+
+                    let celdaBtnEditar = document.createElement('td');
+                    let btnEditar=document.createElement('button');
+                    btnEditar.innerHTML="Editar";
+                    btnEditar.type="button";
+                    btnEditar.class ="btnEdit"
+                    
+                    celdaBtnEditar.appendChild(btnEditar);
+                    // btnEditar.addEventListener('click', (e) => {
+                    //     e.preventDefault();});
+                    btnEditar.addEventListener('click',editarProducto);
+                    fila.appendChild(celdaBtnEditar);
                     
                     
                     return fila;
@@ -135,7 +146,6 @@ async function cargarPR(url) {
 
             function mostrarProductos(json) {
                 for (let i = 0; i < json.length; i++) {
-                    console.log("prueba " + json.producto + json.precio250 + json.precios500 + json.precio1kg);
 
                 }
             }
@@ -185,9 +195,13 @@ async function cargarPR(url) {
                 tablaPrecios.innerHTML = "";
                 lista = [];
             }
+
+            function editarProducto(){
+                console.log("se hizo click en botor eDitar");
+            }
         }
 
-
+//-------------------------------comienzo  codigo de CAPTCHA---------------------------------------
         else if (url == "contacto.html") {
             console.log("captcha ok")
 
@@ -210,7 +224,7 @@ async function cargarPR(url) {
 
             btncaptcha.addEventListener('click', comparacionImbInput);
 
-            //Funciones
+            
 
             //escucha de submit del formulario
             let form = document.querySelector("#formContact");
@@ -224,14 +238,13 @@ async function cargarPR(url) {
                 let telefono = formData.get("telefono");
                 let direccion = formData.get("direccion")
                 let email = formData.get("email");
-                let comentario = formData.get("comentario");
-
-
-
-                //console.log(nombre, apellido, telefono,direccion, email, comentario);
+                let comentario = formData.get("comentario");               
 
 
             }
+
+
+
 
             //lectura del valor ingresado por el usuario
             function lecturaInput() {
@@ -426,11 +439,15 @@ async function cargarPR(url) {
 }
 function cargando(){
     let cargando = document.createElement("div");
-
+    
     cargando.id = "cargando";
     
     cargando.textContent = "loading..."
+   
     
     contenedor.appendChild(cargando);
+    setTimeout(() => {
+        
+    }, 1000);
         
 }
