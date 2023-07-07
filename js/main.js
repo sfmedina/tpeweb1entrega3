@@ -18,9 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function cargarPR(url) {
-    //event.preventDefault();
+    
+    cargando();                 
+    
     try {
-        cargando();       
 
         let response = await fetch(url);
         if (response.ok) {
@@ -29,13 +30,14 @@ async function cargarPR(url) {
             contenedor.innerHTML = t;
             console.log(url)
         }
+
         else {
             let error = document.createElement("h3");
             error.textContent = " error en la carga 1 ";
             contenedor.appendChild(error);
         }
 
-
+            //CARGA LISTA DE PRECIOS  SOLO SE EJECUTA SI ES LA PAGINA A TRAVES DE MOCKAPI 
         if (url == "listaPrecios.html") {
             let url = 'https://649ac80bbf7c145d023975ee.mockapi.io/api/v1/productos';
 
@@ -56,6 +58,7 @@ async function cargarPR(url) {
 
             async function obtenerObjetos() {
                 try {
+                    cargando();
                     let res = await fetch(url);
                     let json = await res.json();
 
@@ -87,6 +90,7 @@ async function cargarPR(url) {
                  if (!tablaPrecios) {
                      console.error("No se encontró la tablaPrecios en el DOM.");
                      
+                     
                  }
 
                 const filas = productos.map((producto) => {
@@ -110,8 +114,14 @@ async function cargarPR(url) {
 
                     let tdDesc15 = document.createElement('td');
                     tdDesc15.textContent = producto.desc15;
+                    tdDesc15.classList.add("tdDesc15");
+                    if(tdDesc15.textContent=='true'){
+                        fila.classList.add("descPorcentaje");
+                        console.log("tiene descuento!!!");
+                    }
                     fila.appendChild(tdDesc15);
-
+                    
+                    
                     return fila;
                 });
 
@@ -391,7 +401,7 @@ async function cargarPR(url) {
                 return nrorandom;
             }
         }
-    }
+    }   
 
     catch (error) {
         console.log("error en la carga 2" + error);
@@ -418,7 +428,9 @@ function cargando(){
     let cargando = document.createElement("div");
 
     cargando.id = "cargando";
+    
     cargando.textContent = "loading..."
-
+    
     contenedor.appendChild(cargando);
+        
 }

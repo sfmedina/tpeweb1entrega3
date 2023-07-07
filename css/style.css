@@ -276,6 +276,22 @@ header{
 .descPorcentaje{
     background-color:rgb(245, 118,21) ; ;
 }
+.tdDesc15{
+    display: none;
+}
+
+.tablaPrecios {
+    width:75%;
+    text-align: center;
+    background-color: white;
+    border-style:double;
+    border: 2px black;
+
+
+}
+.tablaPrecios td,th{
+    border: black solid 2px;
+}
 
 /* comienzo estilo para escritorio */
 
@@ -299,6 +315,9 @@ header{
     border-radius: 0;
     flex-direction: row;
     justify-content: space-evenly;   
+}
+#navBar ul{
+    align-items: normal;
 }
        
 #logoSup{
