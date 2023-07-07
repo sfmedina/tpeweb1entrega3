@@ -51,17 +51,17 @@ function lecturaInput(){
 }  
    // compara el valor ingresado por el usuario por el valor correspondiente a la imagen
    //se resuelve con un switch hasta poder realizar correctamente la lectura de archivos externos 
-function comparacionImbInput(){//
+function comparacionImbInput(){
     lecturaInput();
     switch (NroImagen) {
         case 1:
             
             if (comparacion =="nvhoxdm") {
-                verificacion.style.color = "rgb(0,255,0)"
+                verificacion.classList.add("captchaVerde");
                 verificacion.innerHTML = "Acceso Correcto";
             }
                 else {   
-                        verificacion.style.color = "rgb(255,0,0)"
+                verificacion.classList.add("captchaRojo");
                 verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
             }              
                 
@@ -70,99 +70,99 @@ function comparacionImbInput(){//
 
         case 2:
            
-                 if (comparacion =="plbhxzxl") {
-                    verificacion.style.color = "rgb(0,255,0)"
-                    verificacion.innerHTML = "Acceso Correcto";
-            }
-                else{
-                    verificacion.style.color = "rgb(255,0,0)"
-                    verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
-                    
-                }
+                if (comparacion =="plbhxzxl") {
+                       verificacion.classList.add("captchaVerde");
+                       verificacion.innerHTML = "Acceso Correcto";
+                   }
+                       else {   
+                       verificacion.classList.add("captchaRojo");
+                       verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                   }
                 break;
+
                     
         case 3:
                    
-                    if (comparacion =="phxxjdrk") {
-                        verificacion.style.color = "rgb(0,255,0)"                        
+                if (comparacion =="phxxjdrk") {
+                        verificacion.classList.add("captchaVerde");
                         verificacion.innerHTML = "Acceso Correcto";
-                    }
-                        else{
-                            verificacion.style.color = "rgb(255,0,0)"
-                            verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
-                        }
+                 }
+                else {   
+                        verificacion.classList.add("captchaRojo");
+                        verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                }
         break;
 
         case 4:
-                     if (comparacion =="yhykemwr") {
-                            verificacion.style.color = "rgb(0,255,0)"
-                            verificacion.innerHTML = "Acceso Correcto";
+                if (comparacion =="yhykemwr") {
+                    verificacion.classList.add("captchaVerde");
+                     verificacion.innerHTML = "Acceso Correcto";
                     }
-                    else{
-                            verificacion.style.color = "rgb(255,0,0)"
-                            verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                    else {   
+                    verificacion.classList.add("captchaRojo");
+                    verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
                     }
-                    break;
+                break;
         
         case 5:
-                    if (comparacion =="nrtgdkwn") {
-                            verificacion.style.color = "rgb(0,255,0)"
-                            verificacion.innerHTML = "Acceso Correcto";
-                    }
-                    else{
-                            verificacion.style.color = "rgb(255,0,0)"
-                            verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
-                    }
-                    break;
+                 if (comparacion =="nrtgdkwn") {
+                     verificacion.classList.add("captchaVerde");
+                     verificacion.innerHTML = "Acceso Correcto";
+            }
+                      else {   
+                     verificacion.classList.add("captchaRojo");
+                     verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                 }
+                 break;
         case 6:
                     if (comparacion =="zagtwdx") {
-                            verificacion.style.color = "rgb(0,255,0)"
-                            verificacion.innerHTML = "Acceso Correcto";
-                    }
-                    else{
-                            verificacion.style.color = "rgb(255,0,0)"
-                            verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                        verificacion.classList.add("captchaVerde");
+                        verificacion.innerHTML = "Acceso Correcto";
+            }
+                else {   
+                        verificacion.classList.add("captchaRojo");
+                        verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
                     }
         break;
         case 7:
                     if (comparacion =="lucytpft") {
-                        verificacion.style.color = "rgb(0,255,0)"
-                            verificacion.innerHTML = "Acceso Correcto";
-                    }
-                    else{
-                            verificacion.style.color = "rgb(255,0,0)"
-                            verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                        verificacion.classList.add("captchaVerde");
+                        verificacion.innerHTML = "Acceso Correcto";
+            }
+                else {   
+                        verificacion.classList.add("captchaRojo");
+                        verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
                     }
                     break;
         case 8:
                     if (comparacion == "czchjiav") {
-                            verificacion.style.color = "rgb(0,255,0)"
-                            verificacion.innerHTML = "Acceso Correcto";
-                    }
-                    else{
-                            verificacion.style.color = "rgb(255,0,0)"
-                            verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                        verificacion.classList.add("captchaVerde");
+                        verificacion.innerHTML = "Acceso Correcto";
+            }
+                else {   
+                        verificacion.classList.add("captchaRojo");
+                        verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
                     }
                     break;
         case 9:
                     if (comparacion == "wvvjcfua") {
-                            verificacion.style.color = "rgb(0,255,0)"
-                            verificacion.innerHTML = "Acceso Correcto";
-                    }
-                    else{
-                            verificacion.style.color = "rgb(255,0,0)"
-                            verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                        verificacion.classList.add("captchaVerde");
+                        verificacion.innerHTML = "Acceso Correcto";
+            }
+                else {   
+                        verificacion.classList.add("captchaRojo");
+                        verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
                     }
                     break;
         case 10:
            
                     if (comparacion == "udbbgxls") {
-                            verificacion.style.color = "rgb(0,255,0)"
-                            verificacion.innerHTML = "Acceso Correcto";
-                    }
-                    else{
-                            verificacion.style.color = "rgb(255,0,0)"    
-                            verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
+                        verificacion.classList.add("captchaVerde");
+                        verificacion.innerHTML = "Acceso Correcto";
+            }
+                else {   
+                        verificacion.classList.add("captchaRojo");
+                        verificacion.innerHTML = "Acceso Erroneo, vuelva a intentarlo";
                     }
                     break;     
 

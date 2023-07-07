@@ -130,6 +130,7 @@ header{
     border-radius: 1rem;
     border: .5dv solid  black;
     margin-top: 1rem ;
+    padding-bottom: 2rem;
     text-align: justify;
     width: 100%;
 }
@@ -147,7 +148,7 @@ header{
     width: 70%;
     display:flex;    
     justify-content: center;
-    padding-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
  .sucursales {
@@ -226,6 +227,13 @@ header{
 }
 
 
+.captchaRojo{
+    background-color: red;
+}
+
+.captchaVerde{
+    background-color: green;
+}
 /* estilos footer */
 
 .footerLinks{
